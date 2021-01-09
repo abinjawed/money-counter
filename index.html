@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Money Counter</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+  </head>
+
+  <body>
+  <br/>
+
+
+  <!--The Form-->
+  <p> </p>
+
+    <div class="bills">
+    <fieldset>
+      <legend>Total Amount</legend>
+
+        <table border="1" align="center">
+
+      <!--one dollar bills-->
+      <tr>
+      <td>
+        <img src="images/ones.png" style="width:180px;height:90px;">
+        <form oninput="qty.value=parseInt(a.value)*parseInt(b.value)">0
+        <input type="range" id="a" value="0">100
+        <input type="hidden" type="text" id="b" value="1">
+        =<output name="qty" for="a b"></output>
+        </form>
+        <input type="hidden" onblur="findTotal()" name="qty" id="qty1"/><br>
+      </td>
+
+      <!--five dollar bills-->
+      <td>
+        <img src="images/fives.png" style="width:180px;height:90px;">
+        <form oninput="qty.value=parseInt(a.value)*parseInt(b.value)">0
+        <input type="range" id="a" value="0">100
+        <input type="hidden" type="number" id="b" value="5">
+        =<output name="qty" for="a b"></output>
+        </form>
+        <input type="hidden" onblur="findTotal()" name="qty" id="qty2"/><br>
+      </td>
+      </tr>
+
+      <!--ten dollar bills-->
+      <tr>
+      <td>
+        <img src="images/tens.png" style="width:180px;height:90px;">
+        <form oninput="qty.value=parseInt(a.value)*parseInt(b.value)">0
+        <input type="range" id="a" value="0">100
+        <input type="hidden" type="number" id="b" value="10">
+        =<output name="qty" for="a b"></output>
+        </form>
+        <input type="hidden" onblur="findTotal()" name="qty" id="qty3"/><br>
+      </td>
+
+      <!--twenty dollar bills-->
+      <td>
+        <img src="images/twenties.png" style="width:180px;height:90px;">
+        <form oninput="qty.value=parseInt(a.value)*parseInt(b.value)">0
+        <input type="range" id="a" value="0">100
+        <input type="hidden" type="number" id="b" value="20">
+        =<output name="qty" for="a b"></output>
+        </form>
+        <input type="hidden" onblur="findTotal()" name="qty" id="qty4"/><br>
+      </td>
+    </tr>
+
+      <!--fifty dollar bills-->
+      <tr>
+      <td>
+        <img src="images/fifties.png" style="width:180px;height:90px;">
+        <form oninput="qty.value=parseInt(a.value)*parseInt(b.value)" onblur="findTotal()">0
+        <input type="range" id="a" value="0">100
+        <input type="hidden" type="number" id="b" value="50">
+        =<output name="qty" for="a b"></output>
+        </form>
+        <input type="hidden" onblur="findTotal()" name="qty" id="qty5"/><br>
+      </td>
+
+      <!--hundred dollar bills-->
+      <td>
+        <img src="images/hundreds.png" style="width:180px;height:90px;">
+        <form oninput="qty.value=parseInt(a.value)*parseInt(b.value)">0
+        <input type="range" id="a" value="0">100
+        <input type="hidden" type="number" id="b" value="100">
+        =<output name="qty" for="a b"></output>
+        </form>
+        <input type="hidden" onblur="findTotal()" name="qty" id="qty6"/><br>
+      </td>
+    </tr>
+
+      <tr>
+        <td><div>
+          <button onclick="findTotal()">Total</button>
+
+
+    <input type="text" name="total" id="total"/></div></td>
+      </tr>
+
+    </fieldset>
+  </table>
+  </div>
+
+<br/><br/><br/>
+
+    <br/>
+
+        <script src="assets/js/script.js"></script>
+
+  </body>
+
+</html>;
