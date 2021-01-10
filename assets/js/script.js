@@ -1,7 +1,3 @@
-// The total of each bill type in its own increment of either 1,5,10,20,50 or 100
-function findTotal() {
-  oninput="qty.value=parseInt(a.value)*parseInt(b.value)";
-}
 
 // The total of all bill types
 function myFunction() {
